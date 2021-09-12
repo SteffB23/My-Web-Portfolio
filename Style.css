@@ -140,3 +140,14 @@ h4{
     top: 6px;
     right: 6px;
 }
+/*Screen sizes adjust according to device*/
+@media screen and (max-width:960px) {
+    div{
+        font-size: 10px;
+    }
+    span{
+        font-size: 45px;
+    }
+    
+    
+}
