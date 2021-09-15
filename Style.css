@@ -9,7 +9,7 @@
     width: 100%;
     /* OR background-image: url(https://ca.slack-edge.com/T02A8SMAS9J-U02BHT1V2TU-bdaada3aca09-512); /*work on this. Needs to have a black background and higher res photo. Current photo " is just temporary*/
     /* OR background-image: url("https://wallpapercave.com/wp/wp3157739.jpg");*/
-    background: url('assets/images/selfie\ cartoonish.jpg') no-repeat center; /*Cartoonish background img*/
+    background: url('assets/images/selfie\ cartoonish.jpg') no-repeat center; /*Cartoonish background img of myself*/
     background-size: cover;
     background-position: center;
     }
@@ -148,6 +148,40 @@ h4{
     span{
         font-size: 45px;
     }
-    
-    
+  
+}
+
+.share{
+    position: absolute;
+    top: 90%;
+    left: 8%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.share p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #f9004d;
+    margin-right: 60px;
+}
+
+.share .social a{
+    display: inline-block;
+    color: #fff;
+    margin: 15px;
+    transition: transform .3s;
+}
+.share .social a:hover{
+    transform: scale(3.6);
+}
+/*fix below*/
+
+.main{
+position: relative;
+top: 10px;
+width: 33%;
+padding: 10px;
+justify-content: center;
 }
