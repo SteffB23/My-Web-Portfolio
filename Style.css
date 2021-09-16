@@ -4,35 +4,33 @@
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
-.background{
+.intro{ /*Positioned the best image to be the background*/
     height: 100vh;
     width: 100%;
-    /* OR background-image: url(https://ca.slack-edge.com/T02A8SMAS9J-U02BHT1V2TU-bdaada3aca09-512); /*work on this. Needs to have a black background and higher res photo. Current photo " is just temporary*/
-    /* OR background-image: url("https://wallpapercave.com/wp/wp3157739.jpg");*/
-    background: url('assets/images/selfie\ cartoonish.jpg') no-repeat center; /*Cartoonish background img of myself*/
+    background-image: url("assets/images/selfie\ cartoonish.jpg");
     background-size: cover;
     background-position: center;
-    }
-nav{
+}
+nav{ /*Made the navbar stick while scrolling. May need to change it later due to font-color*/
     display: flex;
+    position: fixed;
+    z-index:initial;
     align-items: center;
     justify-content: space-between;
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
-    
 }
 .logo{
-    color: #fff;
+    color: white;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
 }
-span{
+span{/*A little flavor on the words "Portfolio*/
     color: #f9004d;
 }
-/*added radient hover effect*/
-span:hover{
+span:hover{/*Gradient shine*/
     background: #4285F4;
     color: #fff;
     border-radius: 5px;
@@ -42,7 +40,19 @@ span:hover{
                 0 0 50px #03e9f4,
                 0 0 100px #03e9f4;
 }
-
+span:hover{/*Gradient shine while hovering*/
+    background: #4285F4;
+    color: #fff;
+    border-radius: 5px;
+    transition: .4s;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+/*.nav-links{ If the navbar color wants to be changed
+    
+}*/
 nav ul li{
     list-style-type: none;
     display: inline-block;
@@ -71,6 +81,7 @@ nav ul li a:hover{
               0 0 50px #03e9f4,
               0 0 100px #03e9f4;
 }
+
 .btn{
     background-color: #f9004d;
     color: white;
@@ -92,99 +103,56 @@ nav ul li a:hover{
               0 0 50px #03e9f4,
               0 0 100px #03e9f4;
 }
+
 .content{
     position: absolute;
     top: 50%;
-    left: 8%;
+    left:8%;
     transform: translateY(-50%);
 }
 h1{
     color: white;
-    margin: 20px 0px 20px; /*moved the headers "Hello, my name is Stephan Brookens" down slightly and gave them an appearance [white]*/
-    font-size: 70px;
+    margin: 20px 0px 20px;
+    font-size: 75px;
 }
 h3{
     color: white;
     font-size: 25px;
-    margin-bottom: 50px; /*Pulled the header down and made visible "I am a Full-Stacks Engineer" with [white/Red] appearance*/
+    margin-bottom: 50px;
 }
 h4{
-    color:#f9004d;
-    font-size: 20px;
+    color: #fcfc;
     letter-spacing: 2px;
+    font-size: 20px;
 }
-.newsletter form{
+.newslatter form{
     width: 380px;
     max-width: 100%;
     position: relative;
 }
-.newsletter form input:first-child{
+.newslatter form input:first-child{
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
     border: 2px solid #f9004d;
     outline: none;
     border-radius: 30px;
+    cursor: pointer;
 }
-.newsletter form input:last-child{
+.newslatter form input:last-child{
     position: absolute;
     display: inline-block;
     outline: none;
     border: none;
     padding: 10px 30px;
     border-radius: 30px;
-    background-color: #f9004d; 
+    background-color:#f9004d;
     color: white;
-    cursor: pointer;
-    box-shadow: 0px 0px 5px #000, 0px 0px 15px #868686;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
     top: 6px;
-    right: 6px;
-}
-/*Screen sizes adjust according to device*/
-@media screen and (max-width:960px) {
-    div{
-        font-size: 10px;
-    }
-    span{
-        font-size: 45px;
-    }
-  
+    right: 6px; 
 }
 
-.share{
-    position: absolute;
-    top: 90%;
-    left: 8%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-.share p{
-    font-size: 25px;
-    font-weight: bold;
-    color: #f9004d;
-    margin-right: 60px;
-}
-
-.share .social a{
-    display: inline-block;
-    color: #fff;
-    margin: 15px;
-    transition: transform .3s;
-}
-.share .social a:hover{
-    transform: scale(3.6);
-}
-/*fix below*/
-
-.main{
-position: relative;
-top: 10px;
-width: 33%;
-padding: 10px;
-justify-content: center;
-}
 .about{
     width: 100%;
     padding: 100px 0px;
@@ -204,23 +172,21 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: white;
-    font-size: 15px;
 }
-h2{
+.about-text h2{
     color: white;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
-h5{
-    color:white;
+.about-text h5{
+    color: white;
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
     text-transform: capitalize;
 }
-p{
+.about-text p{
     color: #03e9f4;
     letter-spacing: 1px;
     line-height: 28px;
@@ -228,48 +194,185 @@ p{
     margin-bottom: 45px;
 }
 button{
-    background-color: #f9004d;
-    color: #fff;
+    background-color:#f9004d;
+    color: white;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 12.5px 25px;
+    padding: 13px 30px;
     border-radius: 30px;
-    transition: .5s;
+    transition: .4s; 
 }
 button:hover{
-    transform: scale(1.1);
+    color: black;
+    transition: .4s;
     background: #4285F4;
     color: #fff;
-    cursor: pointer;
     border-radius: 30px;
     box-shadow: 0 0 5px #03e9f4,
               0 0 25px #03e9f4,
               0 0 50px #03e9f4,
-              0 0 100px #0;
+              0 0 100px #03e9f4;
+}
 
-/*.services .title{
-    color: blueviolet;
-    background: lightcoral;
+.service{
+    background: white;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: #f9004d;
     font-size: 75px;
-    margin: 30px;
-    text-align: center;
     width: 1130px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    margin: 30px auto;
+    text-align: center;
 }
 .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
     height: 365px;
     width: 335px;
     padding: 20px 35px;
-    background: lightcoral;
-}*/ 
-
-.container .box .title{
-    background-color: blue;
-    width: 100%;
-    padding: 100px 0px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
     text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
 
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pins p{
+    color: #03e9f4;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s; 
+}
+.card .button:hover{
+    color: black;
+    transition: .4s;
+    background: #4285F4;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button-two{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s; 
+}
+.contact-me .button-two:hover{
+    color: black;
+    transition: .4s;
+    background: #4285F4;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+.social a:hover{
+    color: black;
+    transition: .4s;
+    background: #4285F4;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+.end{
+    position: absolute;
+    color:#f9004d;
+    bottom: 35px;
+    font-size: 34px; 
 }

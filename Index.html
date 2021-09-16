@@ -11,81 +11,81 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
 </head>
 <body>
-    <div class="background"> <!--Used my picture as a background-->
+    <!--Intro Section start-->
+    <!--Will convert page navigation into the nav buttons-->
+
+    <div class="intro">
+        <a name="homesection"></a>
+        <p>homesection</p>
+        <p><a href="#aboutsection">goto aboutsection</a></p>
+        <p><a href="#projectssection">goto projectssection</a></p>
+        <p><a href="#contactsection">goto contactsection</a></p>
         <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2> <!--used span to give additional colors in the text-->
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact Me</a></li>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul class="nav-links">
+                <!--Will convert the buttons to nav-links-->
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About Me">About Me</a></li>
+                <li><a href="#My Projects">My Projects</a></li>
+                <li><a href="https://scratch.mit.edu/projects/562654046/">Play xD</a></li> <!--A lin to a created scratch game-->
+                <li><a href="#Contact Me">Contact Me</a></li>
             </ul>
-            <a href="#" class="btn">Subscribe</a> <!--Click to subscribe needs a link to the social media platform-->
+            <a href="#Subscribe" class="btn">Subscribe</a> <!--Will link to a YouTube channel soon-->
         </nav>
-    <section>
-        <div class="content">
-            <h4>Hello, My name is</h4>
-            <h1>Stephan<span>Brookens</span></h1>
-            <h3><span> I am a </span>Full-Stacks Engineer</h3>
-            <div class="newsletter">
-                <form>
-                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-                    <input type="submit" name="submit" value="Let's Start">
-                </form>
-        </div>
-    </section>            
+
         
-    </div>
-    
-    <div class="share">
-        <p>Let's Connect</p>
-            <div class="social">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <div class="content">
+            <h4><span>my name is</span></h4>
+            <h1>Stephan <span>Brookens</span></h1>
+            <h3>I am a<span>Full-Stacks Engineer</span>.</h3>
+            <div class="newslatter">
+                <!--E-mail is functional-->
+                <form action="mailto:Sbrookens@hotmail.com" method="post" enctype="text/plain">
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" value="Send">
+                </form>
+            </div>
         </div>
     </div>
 
-
+    <!--About section start-->
+    <!--Will convert page navigation into the nav buttons-->
+    <a name="aboutsection"></a>
+    <p>About Section</p>
+    <p><a href="#projectssection">goto projectssection</a></p>
+    <p><a href="#contactsection">goto contactsection</a></p>
+    <p><a href="#homesection">goto homeSection</a></p>    
     <section class="about">
         <div class="main">
-            <img src="assets\images\selfie b and w.jpg">
-            <div class="about text">
+            <img src="assets/images/selfie b and w reversed -.jpg">
+            <div class="about-text">
                 <h2>About Me</h2>
                 <h5>Developer <span>& Designer</span></h5>
-                <p>
-                    I am working towards becoming a Full-Stacks Engineerer. I will be able to provide a clean code along with a pixel masterpeice design. I will be able to make the website immersive and interactive with various web animations. I will also be able to ensure that the website is accessible to all users regardless of the device.
-                </p>
+                <p>When this portfolio is done, I will be able to proudly call myself a legit web-desiner. But for now, i will leave this section blank xD.</p>
                 <button type="button">Let's Talk</button>
             </div>
         </div>
     </section>
 
-    <div class="container">
+    <!--My service section start-->
+
+    <!--Will convert page navigation into the nav buttons-->
+    <a name="projectssection"></a>
+    <p>Projects Section</p>
+    <p><a href="#aboutsection">goto aboutsection</a></p>
+    <p><a href="#contactsection">goto contactsection</a></p>
+    <p><a href="#homesection">goto homeSection</a></p>
+    <div class="service">
         <div class="title">
-            <h7>My Projects</h7>
+            <h2>Top Projects</h2>
         </div>
-        
+
         <div class="box">
             <div class="card">
-                <i class="fas fa-users"></i>
-                <h6>Projects</h6>
-                <div class="pra">
-                    <p>The next generation of the web’s favorite icon library + toolkit is now available as a Beta release!</p>
-
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="card">
-                <i class="fas fa-users"></i>
-                <h6>Projects</h6>
-                <div class="pra">
-                    <p>The next generation of the web’s favorite icon library + toolkit is now available as a Beta release!</p>
+                <i class="fas fa-bars"></i>
+                <h5>Project 1</h5>
+                <div class="pins">
+                    <p>Pretty Soon, you will be able to see a beautiful project pinned here.</p>
 
                     <p style="text-align: center;">
                         <a class="button" href="#">Read More</a>
@@ -94,10 +94,22 @@
             </div>
 
             <div class="card">
-                <i class="fas fa-users"></i>
-                <h6>Projects</h6>
-                <div class="pra">
-                    <p>The next generation of the web’s favorite icon library + toolkit is now available as a Beta release!</p>
+                <i class="far fa-user"></i>
+                <h5>Project 2</h5>
+                <div class="pins">
+                    <p>Pretty Soon, you will be able to see a beautiful project pinned here as well.</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="far fa-bell"></i>
+                <h5>Project 3</h5>
+                <div class="pins">
+                    <p>Pretty Soon, you will also be able to see a beautiful project pinned here.</p>
 
                     <p style="text-align: center;">
                         <a class="button" href="#">Read More</a>
@@ -105,9 +117,120 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="service">
+        <div class="title">
+            <h2>More Projects</h2>
+        </div>
 
-    
+        <div class="box">
+            <div class="card">
+                <i class="fas fa-bars"></i>
+                <h5>Project 1</h5>
+                <div class="pins">
+                    <p>Pretty Soon, you will be able to see a beautiful project pinned here.</p>
 
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="far fa-user"></i>
+                <h5>Project 2</h5>
+                <div class="pins">
+                    <p>Pretty Soon, you will be able to see a beautiful project pinned here as well.</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="far fa-bell"></i>
+                <h5>Project 3</h5>
+                <div class="pins">
+                    <p>Pretty Soon, you will also be able to see a beautiful project pinned here.</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="title">
+            <h2>A little bit more of my Projects</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fas fa-bars"></i>
+                <h5>Project 1</h5>
+                <div class="pins">
+                    <p>Pretty Soon, you will be able to see a beautiful project pinned here.</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="far fa-user"></i>
+                <h5>Project 2</h5>
+                <div class="pins">
+                    <p>Pretty Soon, you will be able to see a beautiful project pinned here as well.</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="far fa-bell"></i>
+                <h5>Project 3</h5>
+                <div class="pins">
+                    <p>Pretty Soon, you will also be able to see a beautiful project pinned here.</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact section-->
+    <!--Will convert page navigation into the nav buttons-->
+    <a name="contactsection"></a>
+    <p>Contact Section</p>
+    <p><a href="#projectssection">goto projectssection</a></p>
+    <p><a href="#aboutsection">goto aboutsection</a></p>    
+    <p><a href="#homesection">goto homeSection</a></p>
+    <div class="contact-me">
+        <p>This porfolio is under construction.</p>
+        <a class="button-two" href="#">Email Me</a>
+    </div>
+
+    <!--footer section-->
+    <footer>
+        <p>Stephan Brookens</p>
+        <p>Click the links to view more of my profiles. COMING SOON:</p>
+        <div class="social">
+            <a href="https://github.com/SteffB23"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/steffb23/"><i class="fab fa-instagram"></i></a>
+            <!--Facebook link is not active yet-->
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p class="end">I hope we can chat soon</p>
+    </footer>
 </body>
+
 </html>
