@@ -36,6 +36,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo]("\assets\images\previe of portfolio.png")
+![portfolio demo](./assets\images\animation.gif)
 
 
