@@ -21,6 +21,10 @@ nav{ /*Made the navbar stick while scrolling. May need to change it later due to
     padding-left: 8%;
     padding-right: 8%;
 }
+p1{
+    visibility: hidden;
+    background-color: black;
+}
 .logo{
     color: white;
     font-size: 35px;
