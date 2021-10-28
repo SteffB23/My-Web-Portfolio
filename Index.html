@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=no">
     <title>Portoflio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -12,27 +18,32 @@
 </head>
 <body>
     <!--Intro Section start-->
-    <!--Will convert page navigation into the nav buttons-->
+
 
     <div class="intro">
-        <a name="homesection"></a>
+        <a name="Home"></a>
         <p1>homesection</p1>
-        <p1><a href="#aboutsection">goto aboutsection</a></p1>
-        <p1><a href="#projectssection">goto projectssection</a></p1>
-        <p1><a href="#contactsection">goto contactsection</a></p1>
-        <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2>
-            <ul class="nav-links">
-                <!--Will convert the buttons to nav-links-->
-                <li><a href="#homesection">Home</a></li>
-                <li><a href="#aboutsection">About Me</a></li>
-                <li><a href="#projectssection">My Projects</a></li>
-                <li><a href="https://scratch.mit.edu/projects/562654046/">Play xD</a></li> <!--A lin to a created scratch game-->
-                <li><a href="#contactsection">Contact Me</a></li>
-            </ul>
-            <a href="#Subscribe" class="btn">Subscribe</a> <!--Will link to a YouTube channel soon-->
-        </nav>
-
+        <p1><a href="#About Me">goto aboutsection</a></p1>
+        <p1><a href="#Projects">goto projectssection</a></p1>
+        <p1><a href="#Contact">goto contactsection</a></p1>
+        
+        <!--ADD BOOT STRAP NAVBAR HERE-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-md-2 rounded">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">About Me</a>
+                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
         
         <div class="content">
             <h4><span>my name is</span></h4>
@@ -50,11 +61,7 @@
 
     <!--About section start-->
     <!--Converted page navigation into the nav buttons-->
-    <a name="aboutsection"></a>
-    <p1>About Section</p1>
-    <p1><a href="#projectssection">goto projectssection</a></p1>
-    <p1><a href="#contactsection">goto contactsection</a></p1>
-    <p1><a href="#homesection">goto homeSection</a></p1>    
+    <a href="#About Me"></a>
     <section class="about">
         <div class="main">
             <img src="assets/images/selfie b and w reversed -.jpg">
@@ -70,11 +77,8 @@
     <!--My service section start-->
 
     <!--Will convert page navigation into the nav buttons-->
-    <a name="projectssection"></a>
-    <p1>Projects Section</p1>
-    <p1><a href="#aboutsection">goto aboutsection</a></p1>
-    <p1><a href="#contactsection">goto contactsection</a></p1>
-    <p1><a href="#homesection">goto homeSection</a></p1>
+    <a name="Projects"></a>
+    
     <div class="service">
         <div class="title">
             <h2>Top Projects</h2>
@@ -209,11 +213,8 @@
 
     <!--Contact section-->
     <!--Will convert page navigation into the nav buttons-->
-    <a name="contactsection"></a>
-    <p1>Contact Section</p1>
-    <p1><a href="#projectssection">goto projectssection</a></p1>
-    <p1><a href="#aboutsection">goto aboutsection</a></p1>    
-    <p1><a href="#homesection">goto homeSection</a></p1>
+    <a name="Contact"></a>
+    
     <div class="contact-me">
         <p>This porfolio is under construction.</p>
         <a class="button-two" href="#">Email Me</a>
@@ -231,6 +232,14 @@
         </div>
         <p class="end">I hope we can chat soon</p>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="Java.js"></script>
 </body>
 
 </html>
+<!--WORK ON: Fixing Navigation buttons on Navbar-->
+<!--WORK ON: Inserting projects on the page -->
+<!--WORK ON: Mobile responsiveness-->
+<!--WORK ON: Resume-->
