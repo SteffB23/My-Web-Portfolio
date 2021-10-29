@@ -1,0 +1,1 @@
+var gif = document.getElementById('project1')
