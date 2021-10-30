@@ -2,7 +2,36 @@
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
-    
+  }
+
+  @keyframes stretch {
+    0% {
+      transform: scale(.3);
+      background-color: red;
+      border-radius: 100%;
+    }
+    50% {
+      background-color: orange;
+    }
+    100% {
+      transform: scale(1.5);
+      background-color: yellow;
+    }
+  }
+  
+  #cardOne {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: red;
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function:linear; 
+    animation-delay: 3;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode:both;
+    animation-play-state: running;
   }
 
 *{
@@ -200,6 +229,18 @@ button:hover{
     align-items: center;
     min-height: 400px;
 }
+
+#cardOne {
+    background-color: bisque;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    animation: pulse 5s infinite;
+}
+#cardOne:hover{
+    animation:cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
 .card{
     height: 365px;
     width: 335px;
