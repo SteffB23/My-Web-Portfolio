@@ -1,14 +1,23 @@
 const ul = document.querySelector('.frameworks');
 const frameworks = ['HTML', 'CSS', 'JavaScript', 'BootStrap', 'JQuery'];
+const card = document.querySelector('.card__inner');
+
 let html = ``;
 
 //conversion to =>
 frameworks.forEach(skills =>{
   
 //Create html Template
-  html += `<li style= "color: #00acc2">${skills}</li>`;
+  html += `<li style= "color: #ffffff">${skills}</li>`;
 })
 
-ul.innerHTML = html
+ul.innerHTML = html;
+
+
+card.addEventListener('click', function() {
+    card.classList.toggle('is-flipped');
+});
+
+
 
 
