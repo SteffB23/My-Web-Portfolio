@@ -1,6 +1,5 @@
 const ul = document.querySelector('.frameworks');
 const frameworks = ['HTML', 'CSS', 'JavaScript', 'BootStrap', 'JQuery'];
-const card = document.querySelector('.card__inner');
 
 let html = ``;
 
@@ -12,12 +11,3 @@ frameworks.forEach(skills =>{
 })
 
 ul.innerHTML = html;
-
-
-card.addEventListener('click', function() {
-    card.classList.toggle('is-flipped');
-});
-
-
-
-
