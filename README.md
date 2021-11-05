@@ -52,7 +52,7 @@ Bootstrap
 # Contribution Guidlines
 ``` 
 Direct link to site:
-file:///C:/Users/SBroo/My%20Projects/My-Web-Portfolio/Index.html
+https://steffb23.github.io/My-Web-Portfolio/Index
 https://github.com/SteffB23/My-Web-Portfolio
 Copyright(c) 2021 by Stephan Brookens
 This software is licensed under MIT license.
