@@ -1,3 +1,7 @@
+function loaded() {
+  alert("Welcome! Feel free to contact me. Have a blessed day!");
+}
+
 const ul = document.querySelector('.frameworks');
 const frameworks = ['HTML', 'CSS', 'JavaScript', 'BootStrap', 'JQuery'];
 
