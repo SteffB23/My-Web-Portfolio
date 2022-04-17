@@ -13,7 +13,6 @@ A challenging position which allows for advancement with broadening my coding ex
 •	HTML	
 •	CSS	
 •	JavaScript
-•	Node.js
 •	JQuery
 •	Bootstrap
 •	Tailwind CSS
@@ -21,7 +20,7 @@ A challenging position which allows for advancement with broadening my coding ex
 ```
 # Experience
 ```
-[08/2021-present] University of Penn LPS Coding Bootcamp
+[08/2021-11/23/21] University of Penn LPS Coding Bootcamp
 
 Web Developer/Student
 
